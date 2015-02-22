@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class QuarterBackRating {
-
+//Used to calculate the Quarter Back Rating for the NFL
 	public static void main(String[] args){
 		
 		Scanner input = new Scanner(System.in);
@@ -29,6 +29,8 @@ public class QuarterBackRating {
 		
 		double d = 2.375 - (interceptions/passAttempts) * 25;
 		
+		//Making sure that each value is between 0 and 2.375
+		//If its under, use 0. If its over, use 2.375
 		double A = Math.max(0, Math.min(a, 2.375));
 		
 		double B = Math.max(0, Math.min(b, 2.375));
